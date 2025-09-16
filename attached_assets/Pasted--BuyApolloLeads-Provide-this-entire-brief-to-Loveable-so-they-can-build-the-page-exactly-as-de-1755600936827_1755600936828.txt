@@ -1,0 +1,112 @@
+**BuyApolloLeads**
+
+*(Provide this entire brief to Loveable so they can build the page exactly as described.)*
+
+---
+
+## 1 · Hero Section
+
+**Headline:** *Unlock Premium Apollo Leads in Minutes*
+**Sub‑Headline:** *Skip the export limits—get laser‑targeted leads delivered straight to your inbox.*
+**Primary CTA Button:** **Order Leads Now**
+— place a soft gradient background (sky‑blue → mint) with a subtle abstract illustration of contact cards/leads.
+
+---
+
+## 2 · Why BuyApolloLeads?
+
+Apollo only lets you export **25 contacts at a time** and caps you at **10 K per month—** forcing hours of manual work or costly enterprise plans.
+
+We leverage a dedicated Apollo partnership that lets us pull leads **in bulk and at wholesale pricing**, then pass those savings on to you.
+✅ *Faster:* One link → bulk export.
+✅ *Cheaper:* From just **\$10** per 5 K verified emails.
+✅ *Flexible:* Packages from 5 K up to 1 M contacts.
+
+---
+
+## 3 · Packages
+
+| Leads | Price       | CTA        |
+| ----- | ----------- | ---------- |
+| 5 K   | **\$10**    | **Select** |
+| 10 K  | **\$20**    | **Select** |
+| 30 K  | **\$50**    | **Select** |
+| 50 K  | **\$90**    | **Select** |
+| 100 K | **\$160**   | **Select** |
+| 500 K | **\$650**   | **Select** |
+| 1 M   | **\$1,200** | **Select** |
+
+*Pricing table cards should be bright, with a hover effect. Each “Select” button scrolls to the order form and pre‑selects the package in a hidden field.*
+
+---
+
+## 4 · How It Works (Quick View)
+
+1. **Choose a Package** — Pick the volume that fits your campaign.
+2. **Paste Your Apollo URL** — Provide the filtered search URL (guide below).
+3. **Pay Securely via Stripe** — We process your order and email the CSV.
+
+<details><summary><strong>Need help getting your Apollo URL?</strong></summary>
+
+### Step‑by‑Step URL Guide
+
+1. **Sign in / Sign up** to your Apollo account (business email recommended).
+2. Click **People** in the top‑left menu.
+3. Hit **Get Unlimited Leads** → choose the *14‑day Professional free trial* to unlock all filters.
+4. Build your filters (industry, role, location, company size, etc.).
+5. In **Email Status**, tick **Verified** only to get confirmed addresses.
+6. When the results load, **copy the full page URL** from your browser.
+7. Paste that link into our order form—done!
+
+</details>
+
+---
+
+## 5 · Order Form
+
+Embed a Loveable form with the following fields (all required):
+
+* **First Name** (text)
+* **Email for Delivery** (email)
+* **Confirm Email** (email validation)
+* **Apollo URL to Scrape** (URL textarea)
+* *(Hidden field pre‑filled with selected package)*
+
+Button: **Proceed to Payment** → redirects to the corresponding Stripe Checkout link.
+
+---
+
+## 6 · Testimonials
+
+> “We received 50 K verified leads in less than 24 hours—at 1/5th the cost of Apollo’s own plan.”
+> — *Alex J.*, Growth Marketer
+
+(Add 2–3 more rotating quotes.)
+
+---
+
+## 7 · Footer
+
+**BuyApolloLeads**
+1234 Market St, Suite 500, San Francisco, CA 94103, USA
+WhatsApp: **+1 646 269 7026**
+© 2025 BuyApolloLeads. All rights reserved.
+
+---
+
+### Design Notes for Loveable
+
+* Palette: white base with powder‑blue (#eaf6ff) and mint‑green (#d3fae8) accents; CTAs in deep‑indigo (#3a3dff).
+* Rounded cards (radius = 16‑24 px) and generous shadow for depth.
+* Use a clean sans‑serif (Inter / Poppins).
+* Ensure **mobile‑first** responsiveness, sticky header CTA, and smooth scroll anchor links.
+* Stripe checkout opens in a new tab to keep the session intact.
+
+---
+
+### Anything Missing?
+
+* **FAQ** (optional): Common questions about delivery time, data format (CSV), refund policy, etc.
+* **Privacy / Terms** links in footer if required.
+
+Let me know if you’d like to add these or tweak copy/design further!

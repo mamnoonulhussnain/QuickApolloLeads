@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(240, 79%, 3%);
+  --foreground: hsl(0, 0%, 100%);
+  --card: hsl(240, 46%, 6%);
+  --card-foreground: hsl(0, 0%, 100%);
+  --popover: hsl(240, 46%, 6%);
+  --popover-foreground: hsl(0, 0%, 100%);
+  --primary: hsl(217, 89%, 61%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(240, 46%, 6%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --muted: hsl(240, 46%, 6%);
+  --muted-foreground: hsl(218, 11%, 65%);
+  --accent: hsl(240, 46%, 6%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(240, 27%, 15%);
+  --input: hsl(240, 27%, 15%);
+  --ring: hsl(217, 89%, 61%);
+  --chart-1: hsl(217, 89%, 61%);
+  --chart-2: hsl(142, 76%, 36%);
+  --chart-3: hsl(47, 96%, 56%);
+  --chart-4: hsl(142, 76%, 42%);
+  --chart-5: hsl(341, 75%, 51%);
+  --sidebar: hsl(240, 46%, 6%);
+  --sidebar-foreground: hsl(0, 0%, 100%);
+  --sidebar-primary: hsl(217, 89%, 61%);
+  --sidebar-primary-foreground: hsl(0, 0%, 100%);
+  --sidebar-accent: hsl(240, 46%, 6%);
+  --sidebar-accent-foreground: hsl(0, 0%, 100%);
+  --sidebar-border: hsl(240, 27%, 15%);
+  --sidebar-ring: hsl(217, 89%, 61%);
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: Menlo, monospace;
+  --radius: 1rem;
+  
+  /* Custom colors for dark theme */
+  --dark-900: hsl(240, 79%, 3%);
+  --dark-800: hsl(240, 46%, 6%);
+  --dark-700: hsl(240, 27%, 15%);
+  --dark-600: hsl(240, 20%, 20%);
+  --blue-400: hsl(217, 89%, 61%);
+  --blue-500: hsl(217, 91%, 60%);
+  --blue-600: hsl(221, 83%, 53%);
+  --purple-400: hsl(271, 81%, 56%);
+  --purple-500: hsl(271, 91%, 65%);
+  --purple-600: hsl(271, 81%, 56%);
+  --green-400: hsl(142, 76%, 36%);
+  --green-500: hsl(142, 76%, 36%);
+}
+
+.dark {
+  --background: hsl(240, 79%, 3%);
+  --foreground: hsl(0, 0%, 100%);
+  --card: hsl(240, 46%, 6%);
+  --card-foreground: hsl(0, 0%, 100%);
+  --popover: hsl(240, 46%, 6%);
+  --popover-foreground: hsl(0, 0%, 100%);
+  --primary: hsl(217, 89%, 61%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(240, 46%, 6%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --muted: hsl(240, 46%, 6%);
+  --muted-foreground: hsl(218, 11%, 65%);
+  --accent: hsl(240, 46%, 6%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(240, 27%, 15%);
+  --input: hsl(240, 27%, 15%);
+  --ring: hsl(217, 89%, 61%);
+}
+
+/* Custom utility classes */
+.dark-900 { background-color: var(--dark-900); }
+.dark-800 { background-color: var(--dark-800); }
+.dark-700 { background-color: var(--dark-700); }
+.dark-600 { background-color: var(--dark-600); }
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-dark-900 text-white;
+    font-family: var(--font-sans);
+  }
+}
+
+@layer utilities {
+  /* Custom animations */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
+  @keyframes mesh {
+    0%, 100% { transform: scale(1) rotate(0deg); }
+    50% { transform: scale(1.1) rotate(180deg); }
+  }
+
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+  @keyframes slideUp {
+    0% { transform: translateY(50px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
+  }
+
+  @keyframes glow {
+    0% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.5); }
+    100% { box-shadow: 0 0 40px rgba(59, 130, 246, 0.8); }
+  }
+
+  @keyframes gradient-x {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-float-delayed {
+    animation: float 6s ease-in-out infinite;
+    animation-delay: -2s;
+  }
+
+  .animate-float-delayed-2 {
+    animation: float 6s ease-in-out infinite;
+    animation-delay: -4s;
+  }
+
+  .animate-mesh {
+    animation: mesh 8s ease-in-out infinite;
+  }
+
+  .animate-mesh-delayed {
+    animation: mesh 8s ease-in-out infinite;
+    animation-delay: -4s;
+  }
+
+  .animate-mesh-slow {
+    animation: mesh 12s ease-in-out infinite;
+    animation-delay: -2s;
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.5s ease-out;
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+
+  .animate-gradient-x {
+    animation: gradient-x 15s ease infinite;
+  }
+
+  /* Glass morphism effects */
+  .backdrop-blur-3xl {
+    backdrop-filter: blur(64px);
+  }
+
+  /* Payment Element Styling */
+  .payment-element-container {
+    margin: 1rem 0;
+  }
+
+  .payment-element-container .p-Input {
+    background: rgba(255, 255, 255, 0.05) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: white !important;
+  }
+
+  .payment-element-container .p-Input:focus {
+    border-color: var(--blue-500) !important;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2) !important;
+  }
+}
